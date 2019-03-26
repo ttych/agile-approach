@@ -22,16 +22,18 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-#  - node_modules
+  - node_modules
+  - package.json
+  - package-lock.json
 
-sass:
-  load_paths:
-    - _sass
-    - node_modules
+# sass:
+#   load_paths:
+#     - _sass
 
 defaults:
   -

@@ -16,6 +16,7 @@ group :jekyll_plugins do
 end
 
 group :development do
+  gem 'rake', '~> 12.3', '>= 12.3.2'
   gem "rubocop-jekyll", "~> 0.9.0"
 end
 
