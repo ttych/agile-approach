@@ -1,4 +1,82 @@
-<footer>
+{%- assign _author = site.author -%}
+
+<footer id="footer" class="page-footer font-small cyan darken-3 bg-light">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 py-3">
+
+        <div class="flex-center text-center">
+          {%- if _author.github -%}
+          <a class="gh-ic" href="https://github.com/{{ _author.github | cgi_escape | escape }}"
+             title="{{ _author.github | escape }}">
+            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.facebook -%}
+          <a class="fb-ic" href="https://www.facebook.com/{{ _author.facebook | cgi_escape | escape }}"
+             title="{{ _author.facebook | escape }}">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.twitter -%}
+          <a class="tw-ic" href="https://twitter.com/{{ _author.twitter | cgi_escape | escape }}"
+             title="{{ _author.twitter | escape }}">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.googleplus -%}
+          <a class="gplus-ic" href="https://plus.google.com/{{ _author.googleplus | escape }}"
+             title="{{ _author.googleplus | escape }}">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.linkedin -%}
+          <a class="li-ic" href="https://www.linkedin.com/in/{{ _author.linkedin | cgi_escape | escape }}"
+             title="{{ _author.linkedin | escape }}">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.instagram -%}
+          <a class="ins-ic" href="https://www.instagram.com/{{ _author.instagram | cgi_escape | escape }}"
+             title="{{ _author.instagram | escape }}">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.pinterest -%}
+          <a class="pin-ic" href="https://www.pinterest.com/{{ _author.pinterest | cgi_escape | escape }}"
+             title="{{ _author.pinterest | escape }}">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          {%- if _author.email -%}
+          <a class="mail-ic" href="mailto:{{ _author.email | cgi_escape | escape }}"
+             title="{{ _author.email | escape }}">
+            <i class="fas fa-at fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          {%- endif -%}
+
+          <a class="rss-ic" href="{{ "/feed.xml" | relative_url }}"
+             title="RSS">
+            <i class="fas fa-rss fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+          &copy; {{ site.time | date: '%Y' }} Copyright:
+          <a href="{{ _author.website }}">{{ _author.name }}</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </footer>
 

@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<article class="documentation">
 
-  <header class="documentation-header">
-    <h1 class="documentation-title">{{ page.title | escape }}</h1>
-  </header>
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+      {%- include menu.html -%}
+    </div>
 
-  <div class="documentation-content">
-    {{ content }}
+    <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+      {{ content }}
+    </div>
+
+    <div class="d-none d-xl-block col-xl-2 bd-toc">
+    </div>
   </div>
-
-</article>
+</div>

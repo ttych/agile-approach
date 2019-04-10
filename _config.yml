@@ -4,9 +4,17 @@ description: >-
 baseurl: "/agile-approach"
 url: ""
 
-email: thomas.tych@gmail.com
-github_username:  ttych
-#twitter_username: jekyllrb
+author:
+  name: ttych
+  website: https://github.com/ttych
+  email: thomas.tych@gmail.com
+  github:  ttych
+  twitter: ThomasTych
+  linkedin: thomas-tychensky-60866b1b
+  # facebook:
+  # pinterest:
+  # instagram:
+  # googleplus:
 
 google_analytics: UA-136856167-1
 
